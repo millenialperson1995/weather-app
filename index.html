@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do Tempo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logoipsum-custom-logo(1).svg" alt="Logo" class="logo-img">
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Previsão do Tempo</h1>
+        
+        <div class="search-box">
+            <input type="text" id="city-input" placeholder="Digite o nome da cidade">
+            <button id="search-btn"><i class="fas fa-search"></i> Buscar</button>
+        </div>
+        
+        <div id="error-message" class="error"></div>
+        
+        <div id="weather-container" class="weather-card hidden">
+            <div class="weather-header">
+                <h2 id="city-name"></h2>
+                <div id="weather-icon"></div>
+            </div>
+            
+            <div class="weather-main">
+                <div id="temperature"></div>
+                <div id="weather-description"></div>
+            </div>
+            
+            <div class="weather-details">
+                <div><i class="fas fa-temperature-low"></i> Sensação: <span id="feels-like"></span></div>
+                <div><i class="fas fa-tint"></i> Umidade: <span id="humidity"></span></div>
+                <div><i class="fas fa-wind"></i> Vento: <span id="wind-speed"></span></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
